@@ -1,0 +1,31 @@
+objectTypes = {
+
+	
+	
+	
+	
+	
+	 
+	pdxmesh = {
+		name = "tempest_habitat_shielded_planet_mesh"
+		file = "gfx/models/planets/shielded_planet.mesh"
+		animation = { id = "idle"	type = "shielded_planet_idle" }
+		scale = 6
+		cull_distance = 99999999.0f
+	}
+	
+	#Maybe I can edit this file and change it's dds
+	pdxmesh = {
+		name = "tempest_shielded_planet_mesh"
+		file = "gfx/models/planets/apocalypse_planet_effects/planet_shield_effect.mesh"
+		animation = { id = "idle"	type = "shielded_planet_idle" }
+		cull_distance = 99999999.0f
+		meshsettings = {
+
+			texture_diffuse = "tempest_shield_diffuse.dds"
+			texture_normal = "nonormal.dds"
+			texture_specular = "nospec.dds"
+			shader = "PdxMeshAlphaAdditiveAnimateUV"
+		}
+	}
+}
