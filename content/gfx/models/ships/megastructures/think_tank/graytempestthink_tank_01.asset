@@ -39,7 +39,7 @@ entity = {
 	locator = { name = "root"	position = { 0 0 0 } }
 	attach = { "root" = "grey_tempesttw_thinktank_part1_entity" }
 	state = { name = "construction"
-	start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 	cull_radius = 500
 }
@@ -50,7 +50,7 @@ entity = {
 	attach = { "root" = "grey_tempesttw_thinktank_part1_entity" }
 	attach = { "root" = "grey_tempesttw_thinktank_part2_entity" }
 	state = { name = "construction"
-	start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 	cull_radius = 500
 }
@@ -64,7 +64,7 @@ entity = {
 	attach = { "roote" = "grey_tempesttw_thinktank_part2_entity" }
 	attach = { "roota" = "grey_tempesttw_thinktank_part2_entity" }
 	state = { name = "construction"
-	start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
 	}
 	scale = 1.5
 	cull_radius = 500
