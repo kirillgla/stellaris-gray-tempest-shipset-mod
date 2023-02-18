@@ -1,42 +1,34 @@
 @dyson_scale = 32
 
-
-
-
 #####################################################
 #####											#####
-#####				Arthropoid					#####
+#####				grey_tempesttw				#####
 #####											#####
 #####################################################
-
 
 entity = {
 	name = "grey_tempesttw_dyson_sphere_ring_entity"
 	pdxmesh = "grey_tempest_colossus_rings_mesh"
 	scale = 9
-	
+
 	get_state_from_parent = no
-	
+
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" }
 
-	
 }
 
 entity = {
 	name = "grey_tempesttw_hole_sphere_ring_entity"
 	pdxmesh = "grey_tempest_colossus_rings_mesh"
 	scale = 1.25
-	
+
 	get_state_from_parent = no
-	
+
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" }
 
-	
 }
-
-
 
 entity = {
 	name = "grey_tempesttw_dyson_sphere_frame_entity"
@@ -47,7 +39,7 @@ entity = {
 	state = { name = "idle" state_time = 10
 		start_event = { trigger_once = yes sound = { soundeffect = "dyson_sphere_treble_hum" } }
 	}
-	
+
 		meshsettings = {
 			name = "frame1Shape"
 			index = 0
@@ -70,7 +62,7 @@ entity = {
 	state = { name = "idle" state_time = 10
 		start_event = { trigger_once = yes sound = { soundeffect = "dyson_sphere_bass_hum_partial" } }
 	}
-	
+
 		meshsettings = {
 			name = "pCylinder26|pCylinderShape2"
 			index = 0
@@ -88,12 +80,12 @@ entity = {
 	name = "grey_tempesttw_dyson_sphere_part_2_entity"
 	pdxmesh = "dyson_sphere_part_2_mesh"
 	scale = @dyson_scale
-	
+
 	default_state = "idle"
 	state = { name = "idle" state_time = 10
 		start_event = { trigger_once = yes sound = { soundeffect = "dyson_sphere_bass_hum_partial" } }
 	}
-	
+
 		meshsettings = {
 			name = "pCylinder11|pCylinderShape11"
 			index = 0
@@ -111,12 +103,12 @@ entity = {
 	name = "grey_tempesttw_dyson_sphere_part_3_entity"
 	pdxmesh = "dyson_sphere_part_3_mesh"
 	scale = @dyson_scale
-	
+
 	default_state = "idle"
 	state = { name = "idle" state_time = 10
 		start_event = { trigger_once = yes sound = { soundeffect = "dyson_sphere_bass_hum_partial" } }
 	}
-	
+
 		meshsettings = {
 			name = "pCylinder22|pCylinderShape22"
 			index = 0
@@ -134,13 +126,13 @@ entity = {
 	name = "grey_tempesttw_dyson_sphere_part_4_entity"
 	pdxmesh = "dyson_sphere_part_4_mesh"
 	scale = @dyson_scale
-	
+
 	default_state = "idle"
 	state = { name = "idle" state_time = 10
 		event = { time = 0 particle = "dyson_sphere_electricity_effect" keep_particle = yes trigger_once = yes }
 		start_event = { trigger_once = yes sound = { soundeffect = "dyson_sphere_bass_hum" } }
 	}
-	
+
 		meshsettings = {
 			name = "pCylinder15|pCylinderShape1"
 			index = 0
@@ -156,13 +148,13 @@ entity = {
 
 entity = {
 	name = "grey_tempesttw_dyson_sphere_phase_01_entity"
-	locator = { name = "root"	position = { 0 	0  0 } }	
-	
+	locator = { name = "root"	position = { 0 	0  0 } }
+
 	locator = { name = "slot1"				position = { 0		0  0 } rotation = { 0 0 0 } }
 	locator = { name = "slot2"				position = { 0		0  0 } rotation = { 0 0 90 } }
 	locator = { name = "slot3"				position = { 0		0  0 } rotation = { 0 0 45 } }
 	locator = { name = "slot4"				position = { 0		0  0 } rotation = { 0 0 -45 } }
-	
+
 	attach = { "slot1" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	#attach = { "slot2" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	#attach = { "slot3" = "grey_tempesttw_dyson_sphere_ring_entity" }
@@ -175,110 +167,105 @@ entity = {
 
 entity = {
 	name = "grey_tempesttw_dyson_sphere_phase_02_entity"
-	locator = { name = "root"	position = { 0 	0  0 } }	
-	
+	locator = { name = "root"	position = { 0 	0  0 } }
+
 	locator = { name = "slot1"				position = { 0		0  0 } rotation = { 0 0 0 } }
 	locator = { name = "slot2"				position = { 0		0  0 } rotation = { 0 0 90 } }
 	locator = { name = "slot3"				position = { 0		0  0 } rotation = { 0 0 45 } }
 	locator = { name = "slot4"				position = { 0		0  0 } rotation = { 0 0 -45 } }
-	
+
 	attach = { "slot1" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	attach = { "slot2" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	#attach = { "slot3" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	#attach = { "slot4" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	#attach = { "root" = "tempest_shielded_planet_01_entity" }
-	
+
 	scale = 1.0
 	cull_radius = 500
 }
 
 entity = {
 	name = "grey_tempesttw_dyson_sphere_phase_03_entity"
-	locator = { name = "root"	position = { 0 	0  0 } }	
-	
+	locator = { name = "root"	position = { 0 	0  0 } }
+
 	locator = { name = "slot1"				position = { 0		0  0 } rotation = { 0 0 0 } }
 	locator = { name = "slot2"				position = { 0		0  0 } rotation = { 0 0 90 } }
 	locator = { name = "slot3"				position = { 0		0  0 } rotation = { 0 0 45 } }
 	locator = { name = "slot4"				position = { 0		0  0 } rotation = { 0 0 -45 } }
-	
+
 	attach = { "slot1" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	attach = { "slot2" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	attach = { "slot3" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	#attach = { "slot4" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	#attach = { "root" = "tempest_shielded_planet_01_entity" }
-	
+
 	scale = 1.0
 	cull_radius = 500
 }
 
 entity = {
 	name = "grey_tempesttw_dyson_sphere_phase_04_entity"
-	locator = { name = "root"	position = { 0 	0  0 } }	
-	
+	locator = { name = "root"	position = { 0 	0  0 } }
+
 	locator = { name = "slot1"				position = { 0		0  0 } rotation = { 0 0 0 } }
 	locator = { name = "slot2"				position = { 0		0  0 } rotation = { 0 0 90 } }
 	locator = { name = "slot3"				position = { 0		0  0 } rotation = { 0 0 45 } }
 	locator = { name = "slot4"				position = { 0		0  0 } rotation = { 0 0 -45 } }
-	
+
 	attach = { "slot1" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	attach = { "slot2" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	attach = { "slot3" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	attach = { "slot4" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	#attach = { "root" = "tempest_shielded_planet_01_entity" }
-	
+
 	scale = 1.0
 	cull_radius = 500
 }
 
 entity = {
 	name = "grey_tempesttw_dyson_sphere_phase_05_entity"
-	locator = { name = "root"	position = { 0 	0  0 } }	
-	
-	
+	locator = { name = "root"	position = { 0 	0  0 } }
+
 	locator = { name = "slot1"				position = { 0		0  0 } rotation = { 0 0 0 } }
 	locator = { name = "slot2"				position = { 0		0  0 } rotation = { 0 0 90 } }
 	locator = { name = "slot3"				position = { 0		0  0 } rotation = { 0 0 45 } }
 	locator = { name = "slot4"				position = { 0		0  0 } rotation = { 0 0 -45 } }
-	
+
 	attach = { "slot1" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	attach = { "slot2" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	attach = { "slot3" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	attach = { "slot4" = "grey_tempesttw_dyson_sphere_ring_entity" }
 	attach = { "root" = "tempest_shielded_planet_01_entity" }
 
-
-	
 	#attach = { "root" = "grey_tempesttw_dyson_sphere_frame_entity" }
 	#attach = { "root" = "grey_tempesttw_dyson_sphere_part_1_entity" }
 	#attach = { "root" = "grey_tempesttw_dyson_sphere_part_2_entity" }
 	#attach = { "root" = "grey_tempesttw_dyson_sphere_part_3_entity" }
 	#attach = { "root" = "grey_tempesttw_dyson_sphere_part_4_entity" }
-	
+
 	#attach = { "root" = "penta_rays_entity" }
 	#attach = { "root" = "hexa_rays_entity" }
-	
+
 	scale = 1.0
 	cull_radius = 500
-	
+
 	game_data = {
 		emissive_recolor_crunch = 6.0
-		bloom_factor = 1.2 
+		bloom_factor = 1.2
 		uv_animation_speed 		= 2
 		uv_animation_direction 	= { 0.0 -0.02 }
 	}
-	
-		
+
 }
 
 entity = {
 	name = "grey_tempesttw_destroyed_dyson_sphere_entity"
-	locator = { name = "root"	position = { 0 	0  0 } }	
-	
+	locator = { name = "root"	position = { 0 	0  0 } }
+
 	attach = { "root" = "grey_tempesttw_dyson_sphere_frame_entity" }
 
 	scale = 1.0
 	cull_radius = 500
 }
-
 
 #####################################################
